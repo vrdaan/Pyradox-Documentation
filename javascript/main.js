@@ -14,15 +14,15 @@ var docs = {
     'Parts of Speech' : 013,
     'Named Entity Recongnition' : 014,
     'Spell Correction' : 015,
-    'Text Summarisation' : 016,
-    'Sentiment Analysis' : 017,
-    'Snippet Manager' : 018,
-    'Wikipedia' : 019,
-    'Sketch' : 020,
-    'Analyse' :021,
-    'Medium' : 022,
-    'Text Replace' : 023,
-    'App Manager' : 024
+    'Text Summarisation' : 022,
+    'Sentiment Analysis' : 020,
+    'Snippet Manager' : 023,
+    'Wikipedia' : 024,
+    'Sketch' : 016,
+    'Analyse' :017,
+    'Medium' : 018,
+    'Text Replace' : 019,
+    'App Manager' : 021
 };
 var sortable = [];
 

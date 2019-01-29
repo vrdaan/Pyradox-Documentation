@@ -27,49 +27,54 @@
         <hr class="my-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div data-aos="fade-down-right" class="doc">
+      <div data-aos="fade-down-right" class="doc" id="1">
         <h2>Syntax Search</h2><hr>
         <p>Search for a syntax on the syntaxdb website...</p>
         <p>Usage:</p>
         <pre>$ syntax --query</pre>
       </div>
-      <div data-aos="fade-down-right" class="doc">
+      <div data-aos="fade-down-right" class="doc" id="2">
         <h2>Google Search</h2><hr>
         <p>Quick search anything on google...</p>
         <p>Usage:</p>
         <pre>$ google --query</pre>
       </div>
-      <div data-aos="fade-down-right" class="doc">
+      <div data-aos="fade-down-right" class="doc" id="3">
         <h2>Calculate</h2><hr>
         <p>Calculate some expression with the help of a google search...</p>
         <p>Usage:</p>
         <pre>$ calc --expression</pre>
       </div>
-      <div data-aos="fade-down-left" class="doc">
-        <h2>Browse</h2><hr>
-        <p>Quickly open a website just by its name...</p>
-        <p>Usage:</p>
-        <pre>$ browse --website name</pre>
+      <div class="grid">
+        <div data-aos="fade-down-left" class="doc" id="4">
+          <h2>Browse</h2><hr>
+          <p>Quickly open a website just by its name...</p>
+          <p>Usage:</p>
+          <pre>$ browse --website name</pre>
+        </div>
+        <br>
+        <div data-aos="fade-down-left" class="doc" id="5">
+          <h2>Me</h2><hr>
+          <p>Quickly browse your social media account like facebook, instagram, whatsapp, twitter, linkedin, github, codechef, codepen...</p>
+          <p>Usage:</p>
+          <pre>$ me --social media site</pre>
+        </div>
+        <br>
+        <div data-aos="fade-down-left" class="doc" id="6">
+          <h2>Save webpage</h2><hr>
+          <p>Download a webpage to a pdf file...</p>
+          <p>Usage:</p>
+          <pre>$ saveweb --url --path the pdf file</pre>
+        </div>
+        <br>
+        <div data-aos="flip-up" class="doc" id="7">
+          <h2>Walk</h2><hr>
+          <p>Perform a directory walk...</p>
+          <p>Usage:</p>
+          <pre>$ walk --directory path</pre>
+        </div>
       </div>
-      <div data-aos="fade-down-left" class="doc">
-        <h2>Me</h2><hr>
-        <p>Quickly browse your social media account like facebook, instagram, whatsapp, twitter, linkedin, github, codechef, codepen...</p>
-        <p>Usage:</p>
-        <pre>$ me --social media site</pre>
-      </div>
-      <div data-aos="fade-down-left" class="doc">
-        <h2>Save webpage</h2><hr>
-        <p>Download a webpage to a pdf file...</p>
-        <p>Usage:</p>
-        <pre>$ saveweb --url --path the pdf file</pre>
-      </div>
-      <div data-aos="flip-up" class="doc">
-        <h2>Walk</h2><hr>
-        <p>Perform a directory walk...</p>
-        <p>Usage:</p>
-        <pre>$ walk --directory path</pre>
-      </div>
-      <div data-aos="flip-up" class="doc">
+      <div data-aos="flip-up" class="doc"  id="8">
         <h2>Memo</h2>
         <p>Organise your tasks efficiently</p>
         <hr>
@@ -93,7 +98,7 @@
         <p>Usage:</p>
         <pre>$ memo_delall</pre>
       </div>
-      <div data-aos="flip-up" class="doc">
+      <div data-aos="flip-up" class="doc"  id="9">
         <h2>Multi Clip Board</h2>
         <p>Copy multiple things to your clip borad</p>
         <hr>
@@ -117,7 +122,7 @@
         <p>Usage:</p>
         <pre>$ mcb_delall</pre>
       </div>
-      <div data-aos="flip-down" class="doc">
+      <div data-aos="flip-down" class="doc"  id="10">
         <h2>Speech</h2><hr>
         <p>Pronounce some text...</p>
         <p>Usage:</p>
@@ -127,7 +132,7 @@
         <p>Usage:</p>
         <pre>$ read</pre>
       </div>
-      <div data-aos="flip-down" class="doc">
+      <div data-aos="flip-down" class="doc"  id="11">
         <h2>Word Cloud</h2>
         <p>Visualize the text by creating some cool wordclouds...</p>
         <p>Optional: provide an image mask for the cloud</p>
@@ -142,7 +147,7 @@
         <p>bgc: background color</p>
         <p>imgsrc: mask image source</p>
       </div>
-      <div data-aos="flip-down" class="doc">
+      <div data-aos="flip-down" class="doc"  id="12">
         <h2>PDF Utilities</h2>
         <hr>
         <p>Merge two pdf files</p>
@@ -153,82 +158,42 @@
         <p>Usage: </p>
         <pre>$ pdf_cut --src --beg --end --dst</pre>
       </div>
-      <div data-aos="zoom-in" class="doc">
+      <div data-aos="zoom-in" class="doc"  id="13">
         <h2>Parts of Speech</h2><hr>
         <p>Tag the parts of speech in a text...</p>
         <p>Usage:</p>
         <pre>$ tag_pos --text</pre>
       </div>
-      <div data-aos="zoom-in" class="doc">
+      <div data-aos="zoom-in" class="doc" id="14">
         <h2>Named Entity Recongnition</h2><hr>
         <p>Recognise the named entities in a text...</p>
         <p>Usage:</p>
         <pre>$ rec_ent --text</pre>
       </div>
-      <div data-aos="zoom-in" class="doc">
+      <div data-aos="zoom-in" class="doc"  id="15">
         <h2>Spell Correction</h2><hr>
         <p>Correct spelling mistakes in the given text...</p>
         <p>Usage:</p>
         <pre>$ correct --text</pre>
       </div>
-      <div data-aos="zoom-out" class="doc">
-        <h2>Text Summarisation</h2>
-        <hr>
-        <p>Summarise your text into n number of lines...</p>
-        <p>Usage:</p>
-        <pre>$ summarise --n --text</pre>
-        <hr>
-        <p>Summarise the text of a file into n number of lines...</p>
-        <p>Usage:</p>
-        <pre>$ summarisef --n --filesrc</pre>
+      <div class="grid">
+        <div data-aos="fade-up-left" class="doc" id="16">
+          <h2>Sketch</h2>
+          <hr>
+          <p>Turn an image into a sketch...</p>
+          <p>Usage:</p>
+          <pre>$ sketch --imgsrc</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up-left" class="doc" id="17">
+          <h2>Analyse</h2>
+          <hr>
+          <p>Turn on the Data Analysis Mode and perform some data analysison the provided csv file...</p>
+          <p>Usage:</p>
+          <pre>$ analyse --csvfilepath</pre>
+        </div>
       </div>
-      <div data-aos="zoom-out" class="doc">
-        <h2>Sentiment Analysis</h2><hr>
-        <p>Analyse the sentiment of the text...</p>
-        <p>Usage:</p>
-        <pre>$ sentiment --text</pre>
-      </div>
-      <div data-aos="zoom-out" class="doc">
-        <h2>Snippet Manager</h2>
-        <hr>
-        <p>List all the snippets...</p>
-        <p>Usage:</p>
-        <pre>$ snippet</pre>
-        <hr>
-        <p>Open the snippet or create a new snippet...</p>
-        <p>Usage:</p>
-        <pre>$ snippet --title</pre>
-      </div>
-      <div data-aos="fade-up-left" class="doc">
-        <h2>Wikipedia</h2>
-        <hr>
-        <p>Search for something on wikipedia...</p>
-        <p>Usage:</p>
-        <pre>$ wiki_search --query</pre>
-        <hr>
-        <p>get the wikipedia summary of an article...</p>
-        <p>Usage:</p>
-        <pre>$ wiki_summary --query</pre>
-        <hr>
-        <p>fetch the complete wikipedia article...</p>
-        <p>Usage:</p>
-        <pre>$ wiki_ --query</pre>
-      </div>
-      <div data-aos="fade-up-left" class="doc">
-        <h2>Sketch</h2>
-        <hr>
-        <p>Turn an image into a sketch...</p>
-        <p>Usage:</p>
-        <pre>$ sketch --imgsrc</pre>
-      </div>
-      <div data-aos="fade-up-left" class="doc">
-        <h2>Analyse</h2>
-        <hr>
-        <p>Turn on the Data Analysis Mode and perform some data analysison the provided csv file...</p>
-        <p>Usage:</p>
-        <pre>$ analyse --csvfilepath</pre>
-      </div>
-      <div data-aos="fade-up-right" class="doc">
+      <div data-aos="fade-up-right" class="doc" id="18">
         <h2>Medium</h2>
         <hr>
         <p>Search for an article on medium...</p>
@@ -243,16 +208,25 @@
         <p>Usage:</p>
         <pre>$ medium --save --query</pre>
       </div>
-      <div data-aos="fade-up-right" class="doc">
-        <h2>Text Replace</h2>
-        <hr>
-        <p>Replace some strings in the copied text...</p>
-        <p>Usage:</p>
-        <pre>$ replace</pre>
-        <pre>--old</pre>
-        <pre>--new</pre>
+      <div class="grid">
+        <div data-aos="fade-up-right" class="doc" id="19">
+          <h2>Text Replace</h2>
+          <hr>
+          <p>Replace some strings in the copied text...</p>
+          <p>Usage:</p>
+          <pre>$ replace</pre>
+          <pre>--old</pre>
+          <pre>--new</pre>
+        </div>
+        <br>
+        <div data-aos="zoom-out" class="doc" id="20">
+          <h2>Sentiment Analysis</h2><hr>
+          <p>Analyse the sentiment of the text...</p>
+          <p>Usage:</p>
+          <pre>$ sentiment --text</pre>
+        </div>
       </div>
-      <div data-aos="fade-up-right" class="doc">
+      <div data-aos="fade-up-right" class="doc" id="21">
         <h2>App Manager</h2>
         <hr>
         <p>Open a file...</p>
@@ -274,6 +248,46 @@
         <p>Delete a keyword for launching a program...</p>
         <p>Usage:</p>
         <pre>$ launch_del --keyword</pre>
+      </div>
+      <div class="grid">
+        <div data-aos="zoom-out" class="doc" id="22">
+          <h2>Text Summarisation</h2>
+          <hr>
+          <p>Summarise your text into n number of lines...</p>
+          <p>Usage:</p>
+          <pre>$ summarise --n --text</pre>
+          <hr>
+          <p>Summarise the text of a file into n number of lines...</p>
+          <p>Usage:</p>
+          <pre>$ summarisef --n --filesrc</pre>
+        </div>
+        <br>
+        <div data-aos="zoom-out" class="doc" id="23">
+          <h2>Snippet Manager</h2>
+          <hr>
+          <p>List all the snippets...</p>
+          <p>Usage:</p>
+          <pre>$ snippet</pre>
+          <hr>
+          <p>Open the snippet or create a new snippet...</p>
+          <p>Usage:</p>
+          <pre>$ snippet --title</pre>
+        </div>
+      </div>
+      <div data-aos="fade-up-left" class="doc" id="24">
+        <h2>Wikipedia</h2>
+        <hr>
+        <p>Search for something on wikipedia...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_search --query</pre>
+        <hr>
+        <p>get the wikipedia summary of an article...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_summary --query</pre>
+        <hr>
+        <p>fetch the complete wikipedia article...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_ --query</pre>
       </div>
       <div class="footer">
       <h4>&lt;&gt; by <a href="https://ritvikrastogi19.surge.sh">Ritvik Rastogi</a></h4>

@@ -21,11 +21,14 @@ body{
   }
 }
 
-
 @media (min-width: 600px){
   .doc{
     width: 400px;
   }
+}
+
+.grid{
+  display: inline-block;
 }
 
 .doc{
