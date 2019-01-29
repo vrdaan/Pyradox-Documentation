@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pyradox</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span id="toggle" onclick="openNav()"><ion-icon name="arrow-dropright-circle"></ion-icon></span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <div class="jumbotron" id="home">
+        <h1 class="display-4">Pyradox</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr class="my-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div data-aos="fade-down-right" class="doc">
+        <h2>Syntax Search</h2><hr>
+        <p>Search for a syntax on the syntaxdb website...</p>
+        <p>Usage:</p>
+        <pre>$ syntax --query</pre>
+      </div>
+      <div data-aos="fade-down-right" class="doc">
+        <h2>Google Search</h2><hr>
+        <p>Quick search anything on google...</p>
+        <p>Usage:</p>
+        <pre>$ google --query</pre>
+      </div>
+      <div data-aos="fade-down-right" class="doc">
+        <h2>Calculate</h2><hr>
+        <p>Calculate some expression with the help of a google search...</p>
+        <p>Usage:</p>
+        <pre>$ calc --expression</pre>
+      </div>
+      <div data-aos="fade-down-left" class="doc">
+        <h2>Browse</h2><hr>
+        <p>Quickly open a website just by its name...</p>
+        <p>Usage:</p>
+        <pre>$ browse --website name</pre>
+      </div>
+      <div data-aos="fade-down-left" class="doc">
+        <h2>Me</h2><hr>
+        <p>Quickly browse your social media account like facebook, instagram, whatsapp, twitter, linkedin, github, codechef, codepen...</p>
+        <p>Usage:</p>
+        <pre>$ me --social media site</pre>
+      </div>
+      <div data-aos="fade-down-left" class="doc">
+        <h2>Save webpage</h2><hr>
+        <p>Download a webpage to a pdf file...</p>
+        <p>Usage:</p>
+        <pre>$ saveweb --url --path the pdf file</pre>
+      </div>
+      <div data-aos="flip-up" class="doc">
+        <h2>Walk</h2><hr>
+        <p>Perform a directory walk...</p>
+        <p>Usage:</p>
+        <pre>$ walk --directory path</pre>
+      </div>
+      <div data-aos="flip-up" class="doc">
+        <h2>Memo</h2>
+        <p>Organise your tasks efficiently</p>
+        <hr>
+        <p>List all the saved memos...</p>
+        <p>Usage:</p>
+        <pre>$ memo_all</pre>
+        <hr>
+        <p>Create a memo...</p>
+        <p>Usage:</p>
+        <pre>$ memo_new --memo title</pre>
+        <hr>
+        <p>Read the memo...</p>
+        <p>Usage:</p>
+        <pre>$ memo_read --memo title</pre>
+        <hr>
+        <p>Delete the memo...</p>
+        <p>Usage:</p>
+        <pre>$ memo_del --memo title</pre>
+        <hr>
+        <p>Delete all memos...</p>
+        <p>Usage:</p>
+        <pre>$ memo_delall</pre>
+      </div>
+      <div data-aos="flip-up" class="doc">
+        <h2>Multi Clip Board</h2>
+        <p>Copy multiple things to your clip borad</p>
+        <hr>
+        <p>List all the saved clips...</p>
+        <p>Usage:</p>
+        <pre>$ mcb_all</pre>
+        <hr>
+        <p>Create a clip...</p>
+        <p>Usage:</p>
+        <pre>$ mcb_new --clip title</pre>
+        <hr>
+        <p>Copy the clip...</p>
+        <p>Usage:</p>
+        <pre>$ mcb_read --clip title</pre>
+        <hr>
+        <p>Delete the clip...</p>
+        <p>Usage:</p>
+        <pre>$ mcb_del --mcb title</pre>
+        <hr>
+        <p>Delete all clips...</p>
+        <p>Usage:</p>
+        <pre>$ mcb_delall</pre>
+      </div>
+      <div data-aos="flip-down" class="doc">
+        <h2>Speech</h2><hr>
+        <p>Pronounce some text...</p>
+        <p>Usage:</p>
+        <pre>$ pronounce --text</pre>
+        <hr>
+        <p>Read the text copied in your clipboard...</p>
+        <p>Usage:</p>
+        <pre>$ read</pre>
+      </div>
+      <div data-aos="flip-down" class="doc">
+        <h2>Word Cloud</h2>
+        <p>Visualize the text by creating some cool wordclouds...</p>
+        <p>Optional: provide an image mask for the cloud</p>
+        <hr>
+        <p>Usage:</p>
+        <pre>$ wordcloud --w --h --mxw --bgc</pre>
+        <pre>$ wordcloud --w --h --mxw --bgc --imgsrc</pre>
+        <hr>
+        <p>w: width</p>
+        <p>h: height</p>
+        <p>mxw: maximum number of words for the cloud</p>
+        <p>bgc: background color</p>
+        <p>imgsrc: mask image source</p>
+      </div>
+      <div data-aos="flip-down" class="doc">
+        <h2>PDF Utilities</h2>
+        <hr>
+        <p>Merge two pdf files</p>
+        <p>Usage:</p>
+        <pre>$ pdf_merge --src1 --scr2 --dest</pre>
+        <hr>
+        <p>Slice a pdf file</p>
+        <p>Usage: </p>
+        <pre>$ pdf_cut --src --beg --end --dst</pre>
+      </div>
+      <div data-aos="zoom-in" class="doc">
+        <h2>Parts of Speech</h2><hr>
+        <p>Tag the parts of speech in a text...</p>
+        <p>Usage:</p>
+        <pre>$ tag_pos --text</pre>
+      </div>
+      <div data-aos="zoom-in" class="doc">
+        <h2>Named Entity Recongnition</h2><hr>
+        <p>Recognise the named entities in a text...</p>
+        <p>Usage:</p>
+        <pre>$ rec_ent --text</pre>
+      </div>
+      <div data-aos="zoom-in" class="doc">
+        <h2>Spell Correction</h2><hr>
+        <p>Correct spelling mistakes in the given text...</p>
+        <p>Usage:</p>
+        <pre>$ correct --text</pre>
+      </div>
+      <div data-aos="zoom-out" class="doc">
+        <h2>Text Summarisation</h2>
+        <hr>
+        <p>Summarise your text into n number of lines...</p>
+        <p>Usage:</p>
+        <pre>$ summarise --n --text</pre>
+        <hr>
+        <p>Summarise the text of a file into n number of lines...</p>
+        <p>Usage:</p>
+        <pre>$ summarisef --n --filesrc</pre>
+      </div>
+      <div data-aos="zoom-out" class="doc">
+        <h2>Sentiment Analysis</h2><hr>
+        <p>Analyse the sentiment of the text...</p>
+        <p>Usage:</p>
+        <pre>$ sentiment --text</pre>
+      </div>
+      <div data-aos="zoom-out" class="doc">
+        <h2>Snippet Manager</h2>
+        <hr>
+        <p>List all the snippets...</p>
+        <p>Usage:</p>
+        <pre>$ snippet</pre>
+        <hr>
+        <p>Open the snippet or create a new snippet...</p>
+        <p>Usage:</p>
+        <pre>$ snippet --title</pre>
+      </div>
+      <div data-aos="fade-up-left" class="doc">
+        <h2>Wikipedia</h2>
+        <hr>
+        <p>Search for something on wikipedia...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_search --query</pre>
+        <hr>
+        <p>get the wikipedia summary of an article...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_summary --query</pre>
+        <hr>
+        <p>fetch the complete wikipedia article...</p>
+        <p>Usage:</p>
+        <pre>$ wiki_ --query</pre>
+      </div>
+      <div data-aos="fade-up-left" class="doc">
+        <h2>Sketch</h2>
+        <hr>
+        <p>Turn an image into a sketch...</p>
+        <p>Usage:</p>
+        <pre>$ sketch --imgsrc</pre>
+      </div>
+      <div data-aos="fade-up-left" class="doc">
+        <h2>Analyse</h2>
+        <hr>
+        <p>Turn on the Data Analysis Mode and perform some data analysison the provided csv file...</p>
+        <p>Usage:</p>
+        <pre>$ analyse --csvfilepath</pre>
+      </div>
+      <div data-aos="fade-up-right" class="doc">
+        <h2>Medium</h2>
+        <hr>
+        <p>Search for an article on medium...</p>
+        <p>Usage:</p>
+        <pre>$ medium --search --query</pre>
+        <hr>
+        <p>Browse an article on medium...</p>
+        <p>Usage:</p>
+        <pre>$ medium --visit --query</pre>
+        <hr>
+        <p>Save an article of medium into a pdf file...</p>
+        <p>Usage:</p>
+        <pre>$ medium --save --query</pre>
+      </div>
+      <div data-aos="fade-up-right" class="doc">
+        <h2>Text Replace</h2>
+        <hr>
+        <p>Replace some strings in the copied text...</p>
+        <p>Usage:</p>
+        <pre>$ replace</pre>
+        <pre>--old</pre>
+        <pre>--new</pre>
+      </div>
+      <div data-aos="fade-up-right" class="doc">
+        <h2>App Manager</h2>
+        <hr>
+        <p>Open a file...</p>
+        <p>Usage:</p>
+        <pre>$ open --filepath</pre>
+        <hr>
+        <p>Launch a program...</p>
+        <p>Usage:</p>
+        <pre>$ launch --keyword</pre>
+        <hr>
+        <p>List all keywords for launching programs...</p>
+        <p>Usage:</p>
+        <pre>$ launch_all</pre>
+        <hr>
+        <p>Write a new keyword for launching a program...</p>
+        <p>Usage:</p>
+        <pre>$ launch_new --keyword --path</pre>
+        <hr>
+        <p>Delete a keyword for launching a program...</p>
+        <p>Usage:</p>
+        <pre>$ launch_del --keyword</pre>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="javascript/main.js" charset="utf-8"></script>
+    <script src="javascript/sidebar.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
