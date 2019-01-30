@@ -14,15 +14,15 @@ var docs = {
     'Parts of Speech' : 013,
     'Named Entity Recongnition' : 014,
     'Spell Correction' : 015,
-    'Text Summarisation' : 022,
-    'Sentiment Analysis' : 020,
-    'Snippet Manager' : 023,
-    'Wikipedia' : 024,
     'Sketch' : 016,
     'Analyse' :017,
     'Medium' : 018,
     'Text Replace' : 019,
-    'App Manager' : 021
+    'Sentiment Analysis' : 020,
+    'App Manager' : 021,
+    'Text Summarisation' : 022,
+    'Snippet Manager' : 023,
+    'Wikipedia' : 024
 };
 var sortable = [];
 
@@ -32,7 +32,7 @@ for (var doc in docs) {
 
 sortable.sort();
 
-var sidenav = document.getElementById('mySidenav');
+var sidenav = document.getElementById('mySidepanel');
 
 for(i=0; i<sortable.length; i++)
-  sidenav.innerHTML += '<a href="#'+sortable[i][1]+'">'+sortable[i][0]+'</a>'
+  sidenav.innerHTML += '<a href="#'+sortable[i][1]+'" onclick="closeNav()">'+sortable[i][0]+'</a>'

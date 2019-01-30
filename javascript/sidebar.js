@@ -1,11 +1,9 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+/* Set the width of the sidebar to 250px (show it) */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidepanel").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+/* Set the width of the sidebar to 0 (hide it) */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidepanel").style.width = "0";
 }
