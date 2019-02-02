@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/scrollindicator.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
@@ -60,12 +61,13 @@
     <span id="toggle" onclick="openNav()"><ion-icon name="arrow-dropright-circle"></ion-icon></span>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main" onclick="closeNav()" align="center">
-      <div class="header">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
       </div>
+    </div>
+    <div id="main" onclick="closeNav()" align="center">
+
       <div class="jumbotron" id="home">
         <img src="images/logo.png">
         <h1 class="display-4">Pyradox a revolutionary personal digital assistant</h1>
@@ -384,6 +386,7 @@
     <script>AOS.init();</script>
     <script src="javascript/main.js" charset="utf-8"></script>
     <script src="javascript/sidebar.js" charset="utf-8"></script>
+    <script src="javascript/scrollindicator.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

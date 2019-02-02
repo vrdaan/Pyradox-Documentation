@@ -86,10 +86,20 @@ body{
 .sidepanel > .dropdown-container{
   background-color: #00695c;
 }
+
 .sidepanel > .dropdown-container > .dropdown-container{
   background-color: #00796b;
 }
+
 .dropdown-btn{
   background-color: inherit;
   color: #4db6ac;
+}
+
+.progress-container {
+  background: #ccc;
+}
+
+#myBar {
+  background: #4db6ac;
 }
