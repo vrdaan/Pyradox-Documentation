@@ -61,7 +61,7 @@ body{
 
 
 .sidepanel{
-  background-color: #00695c;
+  background-color: #004d40;
 }
 
 .sidepanel h1{
@@ -77,15 +77,17 @@ body{
 }
 
 .active {
-  background-color: #004d40;
-  color: white;
+  background-color: #00bfa5 !important;
+  color: #000000 !important;
 }
 
-.dropdown-container{
-  background-color: #00897b;
-}
-
-.dropdown-btn{
+.sidepanel > .dropdown-container{
   background-color: #00695c;
+}
+.sidepanel > .dropdown-container > .dropdown-container{
+  background-color: #00796b;
+}
+.dropdown-btn{
+  background-color: inherit;
   color: #4db6ac;
 }

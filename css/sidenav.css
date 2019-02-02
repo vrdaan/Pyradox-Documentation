@@ -52,3 +52,8 @@
   display: none;
   padding-left: 8px;
 }
+
+button > ion-icon{
+  float: right;
+  padding-right: 8px;
+}
