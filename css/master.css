@@ -19,6 +19,7 @@ body{
   background-color: #e0f2f1;
   max-width: 100vw;
   margin: auto;
+  /* text-align: left; */
 }
 
 @media (max-width: 600px) {
@@ -43,10 +44,11 @@ body{
   display: inline-block;
   background-color: #80cbc4;
   box-shadow: 10px 10px #b2dfdb;
+  text-align: left;
 }
 
 .jumbotron{
-  box-shadow: 10px 10px #b2dfdb;
+  /* box-shadow: 10px 10px #b2dfdb; */
   min-height: 95vh;
   width: 97vw;
   background-color: #e0f2f1 !important;

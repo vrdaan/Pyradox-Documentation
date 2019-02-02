@@ -23,6 +23,19 @@
   padding-left: 32px;
 }
 
+.sidepanel a:hover{
+  text-decoration: none;
+}
+
+.sidepanel button{
+  outline: 0;
+}
+
+.sidepanel button:focus{
+  outline: 0;
+}
+
+
 /* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
   position: absolute;
