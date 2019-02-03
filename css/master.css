@@ -17,6 +17,10 @@
   --alpha800: rgba(02, 119, 189, 0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #toggle{
   font-size: 10vh;
   color: var(--alpha900);
@@ -40,9 +44,9 @@ body{
 }
 
 #main{
-  background-color: #ffffff;
   max-width: 100vw;
   margin: auto;
+  background: linear-gradient(55deg, var(--a200) 0%, var(--a400) 51%, var(--a700) 85%);
 }
 
 @media (max-width: 600px) {
@@ -86,6 +90,7 @@ body{
   margin-top: 10px;
   width: 100%;
   text-align: right;
+  padding: 20px;
 }
 
 
@@ -124,7 +129,7 @@ body{
 }
 
 .progress-container {
-  background: var(--c100);
+  background: #efefef;
 }
 
 #myBar {
