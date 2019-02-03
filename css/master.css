@@ -31,16 +31,19 @@
 }
 
 html{
-  background-color: var(--c050);
+  /* background-color: var(--c050); */
+  background-color: #ffffff;
 }
 
 body{
   overflow-x: hidden;
-  background-color: var(--c050);
+  /* background-color: var(--c050); */
+  background-color: #ffffff;
 }
 
 #main{
-  background-color: var(--c050);
+  /* background-color: var(--c050); */
+  background-color: #ffffff;
   max-width: 100vw;
   margin: auto;
 }
@@ -63,20 +66,25 @@ body{
 
 .doc{
   margin: 20px;
-  padding: 5px;
+  padding: 20px;
   display: inline-block;
   background-color: var(--c200);
   box-shadow: 10px 10px var(--c100);
   text-align: left;
 }
 
-.jumbotron{
+#home{
   min-height: 95vh;
   width: 97vw;
   background-color: var(--c050) !important;
   text-align: center;
 }
 
+.jumbotron{
+  width: 97vw;
+  background-color: var(--c050) !important;
+  text-align: center;
+}
 .footer{
   margin-top: 10px;
   width: 100%;

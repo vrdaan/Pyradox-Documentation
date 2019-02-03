@@ -21,38 +21,43 @@
       <div class="dropdown-container">
         <a href="#da01" onclick="closeNav()">Correlation</a>
         <a href="#da02" onclick="closeNav()">Describe</a>
+        <a href="#da03" onclick="closeNav()">Done</a>
         <button class="dropdown-btn">Drop<ion-icon name="menu"></ion-icon>
         </button>
         <div class="dropdown-container">
-          <a href="#da0301" onclick="closeNav()">Null</a>
-          <a href="#da0302" onclick="closeNav()">Outliers, Interquantile range</a>
-          <a href="#da0303" onclick="closeNav()">Outliers, Quantiles</a>
-          <a href="#da0304" onclick="closeNav()">Outliers, Z Score</a>
-          <a href="#da0305" onclick="closeNav()">Column</a>
+          <a href="#da0401" onclick="closeNav()">Null</a>
+          <a href="#da0402" onclick="closeNav()">Outliers, Interquantile range</a>
+          <a href="#da0403" onclick="closeNav()">Outliers, Quantiles</a>
+          <a href="#da0404" onclick="closeNav()">Outliers, Z Score</a>
+          <a href="#da0405" onclick="closeNav()">Column</a>
         </div>
-        <a href="#da04" onclick="closeNav()">Encode, Label</a>
-        <a href="#da05" onclick="closeNav()">Encode, One Hot</a>
-        <a href="#da06" onclick="closeNav()">Groupby</a>
-        <a href="#da07" onclick="closeNav()">Head</a>
-        <a href="#da08" onclick="closeNav()">Impute</a>
-        <a href="#da09" onclick="closeNav()">Insight</a>
-        <a href="#da10" onclick="closeNav()">Pivot</a>
+        <a href="#da05" onclick="closeNav()">Encode, Label</a>
+        <a href="#da06" onclick="closeNav()">Encode, One Hot</a>
+        <a href="#da07" onclick="closeNav()">Groupby</a>
+        <a href="#da08" onclick="closeNav()">Head</a>
+        <a href="#da09" onclick="closeNav()">Impute</a>
+        <a href="#da10" onclick="closeNav()">Insight</a>
+        <a href="#da11" onclick="closeNav()">Missing Data</a>
+        <a href="#da12" onclick="closeNav()">Pivot</a>
         <button class="dropdown-btn">Plot<ion-icon name="menu"></ion-icon>
         </button>
         <div class="dropdown-container">
-          <a href="#da1101" onclick="closeNav()">Bar</a>
-          <a href="#da1102" onclick="closeNav()">Box</a>
-          <a href="#da1103" onclick="closeNav()">Count</a>
-          <a href="#da1104" onclick="closeNav()">Dist</a>
-          <a href="#da1105" onclick="closeNav()">Joint</a>
-          <a href="#da1106" onclick="closeNav()">Pair</a>
-          <a href="#da1107" onclick="closeNav()">Pie</a>
-          <a href="#da1108" onclick="closeNav()">Violin</a>
+          <a href="#da1301" onclick="closeNav()">Bar</a>
+          <a href="#da1302" onclick="closeNav()">Box</a>
+          <a href="#da1303" onclick="closeNav()">Count</a>
+          <a href="#da1304" onclick="closeNav()">Dist</a>
+          <a href="#da1305" onclick="closeNav()">Joint</a>
+          <a href="#da1306" onclick="closeNav()">Pair</a>
+          <a href="#da1307" onclick="closeNav()">Pie</a>
+          <a href="#da1308" onclick="closeNav()">Violin</a>
         </div>
-        <a href="#da12" onclick="closeNav()">Shape</a>
-        <a href="#da13" onclick="closeNav()">Tail</a>
-        <a href="#da14" onclick="closeNav()">Unique</a>
-        <a href="#da15" onclick="closeNav()">Value Distribution</a>
+        <a href="#da14" onclick="closeNav()">Reload</a>
+        <a href="#da15" onclick="closeNav()">Revert</a>
+        <a href="#da16" onclick="closeNav()">Save</a>
+        <a href="#da17" onclick="closeNav()">Shape</a>
+        <a href="#da18" onclick="closeNav()">Tail</a>
+        <a href="#da19" onclick="closeNav()">Unique</a>
+        <a href="#da20" onclick="closeNav()">Value Distribution</a>
       </div>
 
     </div>
@@ -70,7 +75,7 @@
 
       <div class="jumbotron" id="home">
         <img src="images/logo.png">
-        <h1 class="display-4">Pyradox a revolutionary personal digital assistant</h1>
+        <h1 class="display-4">Pyradox: A Revolutionary Personal Digital Assistant</h1>
         <p class="lead">
           Pyradox is designed to get things done from basic assitance to assistance in data analysis and natural language processing and many other utilities.
           <br>
@@ -377,9 +382,304 @@
         <p>Usage:</p>
         <pre>$ wiki_ --query</pre>
       </div>
+
+      <div class="jumbotron">
+        <h1 class="display-4">Data Analysis Features</h1>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da01">
+        <h2>Correlation</h2> <hr>
+        <p>Plot a heatmap to visualize the correlation bwtween all the attribute</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; corr</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da02">
+        <h2>Describe</h2> <hr>
+        <p>Calculate various metrics such as mean, median, mode, min, max, sum, count, std, quantile, correlation with target column of a feature column</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; describe --&lt;column&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da07">
+        <h2>Groupby</h2> <hr>
+        <p>Generate a groupby table of columns c using aggregate function f</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; groupby --&lt;by&gt; --&lt;c&gt; --&lt;f&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da0402">
+        <h2>Drop, Outliers, Interquantile Range</h2> <hr>
+        <p>Drop the outliers based on inter quantile range</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; drop --o --iqr</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da0403">
+        <h2>Drop, Outliers, Custom Quantiles</h2> <hr>
+        <p>Drop the outliers which lie outside the mentioned quantiles</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; drop --o --q --&lt;beg&gt; --&lt;end&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da0404">
+        <h2>Drop, Outliers, Z-Score</h2> <hr>
+        <p>Drop outliers in the data based on the zscore value (n)</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; drop --o --z --&lt;n&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da0401">
+        <h2>Drop, Null</h2> <hr>
+        <p>Drop rows containing null values</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; drop --na</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da10">
+        <h2>Insight</h2> <hr>
+        <p>Calculate metrics such as mean, median, mode, min, max, sum, count, std, quantile, correlation with target column (corr) of the feature column</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; insight --&lt;col&gt; --&lt;metric&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da0405">
+        <h2>Drop, Columns</h2> <hr>
+        <p>Drop a specific column</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; drop --&lt;col&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da05">
+        <h2>Encode, Label</h2> <hr>
+        <p>Label encode the attribute column</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; encode --l --&lt;col&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da11">
+        <h2>Missing Data</h2> <hr>
+        <p>Plot a heatmap to visualize the missing data</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; missingdata</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da06">
+        <h2>Encode, One Hot</h2> <hr>
+        <p>One hot encode the attribute column</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; encode --o --&lt;col&gt;</pre>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da03">
+          <h2>Done</h2>
+          <hr>
+          <p>Exit the data analysis mode and save the python for the analysis performed in the session and the modified dataset</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; done</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da08">
+          <h2>Head</h2>
+          <hr>
+          <p>Shows the first n rows the dataset</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; head --&lt;n&gt;</pre>
+          <hr>
+          <p>Shows header of the dataset (first 0 rows)</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; head</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da14">
+          <h2>Reload</h2>
+          <hr>
+          <p>Reload the original dataset</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; reload</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da14">
+          <h2>Revert</h2>
+          <hr>
+          <p>Revert back to the last saved checkpoint</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; revert</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da17">
+          <h2>Shape</h2>
+          <hr>
+          <p>Shows the shape of the dataset</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; shape</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da16">
+          <h2>Save</h2>
+          <hr>
+          <p>Save the python for the analysis performed in the session and the modified dataset, thus create a checkpoint</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; save</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da18">
+          <h2>Tail</h2>
+          <hr>
+          <p>Shows the last n rows the dataset</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; tail --&lt;n&gt;</pre>
+          <hr>
+          <p>Shows header of the dataset (last 0 rows)</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; tail</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da19">
+          <h2>Unique</h2>
+          <hr>
+          <p>Shows the unique values of the attribute</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; unq --&lt;column&gt;</pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da19">
+          <h2>Value Distribution</h2>
+          <hr>
+          <p>Shows the value count of the attribute</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; valdist --&lt;column&gt;</pre>
+          <hr>
+          <p>Shows the value count of the attribute differentiated on th basis of various classes in the target column</p>
+          <p>Usage</p>
+          <pre>&gt;&gt; valdisty --&lt;column&gt;</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da12">
+          <h2>Pivot</h2>
+          <hr>
+          <p>Genrate a pivot table</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; pivot --&lt;estimator&gt;
+   --&lt;i:index&gt; --&lt;c:columns&gt; --&lt;v:values&gt;
+          </pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1301">
+          <h2>Plot, Bar</h2>
+          <hr>
+          <p>Plot an estimate of central tendency for a numeric variable with the height of each rectangle and provides some indication of the uncertainty around that estimate using error bars</p>
+          <hr>
+          <p>Usage</p>
+          <pre>&gt;&gt; plot --bar --&lt;x&gt; --&lt;y&gt; --&lt;estimator&gt;
+   --&lt;hue(optional)&gt;
+          </pre>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da09">
+        <h2>Impute</h2>
+        <hr>
+        <p>Impute the missing data in the attribute</p>
+        <p>Usage</p>
+        <pre>&gt;&gt; impute --&lt;col&gt; --&lt;method&gt;</pre>
+        <p>
+          Methods:<br>
+          &curren; ffill <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Impute using forward filling <br>
+          &curren; bfill <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Impute using backward filling <br>
+          &curren; interpolate <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;impute using interpolation <br>
+          &curren; mean --&lt;g:col&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;impute the mean (optional: groupedby a particular column) <br>
+          &curren; median --&lt;g:col&gt; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;impute the median (optional: groupedby a particular column) <br>
+          &curren; mode --&lt;g:col&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;impute the mode (optional: groupedby a particular column) <br>
+        </p>
+        <hr>
+        <p>Impute the missing data in the attibute with a scalar (optional: numeric)</p>
+        <p>Usage</p>
+        <pre>&gt;&gt; impute --&lt;col&gt; --&lt;value&gt; --&lt;n(optional)&gt;</pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1302">
+        <h2>Plot, Box</h2>
+        <hr>
+        <p>Draw a box plot to show distributions with respect to categories</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --box --&lt;x&gt; --&lt;y&gt; --&lt;hue(optional)&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1303">
+        <h2>Plot, Count</h2>
+        <hr>
+        <p>Show the counts of observations in each categorical bin using bars</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --count --&lt;x&gt; --&lt;hue(optional)&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1304">
+        <h2>Plot, Dist</h2>
+        <hr>
+        <p>Plot a univariate distribution of observations</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --dist --&lt;col&gt; --&lt;bins(optional)&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1305">
+        <h2>Plot, Joint</h2>
+        <hr>
+        <p>Draw a plot of two variables with bivariate and univariate graphs, kinds: scatter, reg, resid, kde, hex</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --joint --&lt;x&gt; --&lt;x&gt; --&lt;kind(optional)&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1306">
+        <h2>Plot, Pair</h2>
+        <hr>
+        <p>Plot pairwise relationships in a dataset, hue: variable in data to map plot aspects to different colors.</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --pair --&lt;hue(optional)&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1307">
+        <h2>Plot, Pie</h2>
+        <hr>
+        <p>Plot a circular statistical graphic which is divided into slices to illustrate numerical proportion</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --pie --&lt;col&gt;
+        </pre>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="doc" id="da1308">
+        <h2>Plot, Violin</h2>
+        <hr>
+        <p>Draw a combination of boxplot and kernel density estimate</p>
+        <hr>
+        <p>Usage</p>
+        <pre>&gt;&gt; plot --violin --&lt;x&gt; --&lt;y&gt; --&lt;hue(optional)&gt;
+        </pre>
+      </div>
       <div class="footer">
       <h4>&lt;&gt; by <a href="https://ritvikrastogi19.surge.sh">Ritvik Rastogi</a></h4>
-    </div>
+      </div>
     </div>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
