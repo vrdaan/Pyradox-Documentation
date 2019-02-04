@@ -87,45 +87,53 @@ body{
   text-align: center;
 }
 .footer{
-  margin-top: 10px;
   width: 100%;
   text-align: right;
   padding: 20px;
+  background-color: var(--a700);
 }
 
+.footer a{
+  color: var(--c800);
+}
+
+.footer a:hover{
+  color: var(--c900);
+  text-decoration: none;
+}
 
 .sidepanel{
-  background-color: var(--c900);
+  background-color: var(--a700);
 }
 
 .sidepanel h1{
-  color: var(--c400);
+  color: var(--c900);
 }
 
 .sidepanel a{
-  color: var(--c300);
+  color: var(--c800);
 }
 
 .sidepanel a:hover, .dropdown-btn:hover {
-  color: var(--c100);
+  color: var(--c900);
 }
 
 .active {
-  background-color: var(--a700) !important;
+  background-color: var(--a100) !important;
   color: #000000 !important;
 }
 
 .sidepanel > .dropdown-container{
-  background-color: var(--c800);
+  background-color: var(--a400);
 }
 
 .sidepanel > .dropdown-container > .dropdown-container{
-  background-color: var(--c700);
+  background-color: var(--a200);
 }
 
 .dropdown-btn{
   background-color: inherit;
-  color: var(--c300);
+  color: var(--c800);
 }
 
 .progress-container {
