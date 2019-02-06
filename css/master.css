@@ -1,18 +1,19 @@
 :root{
-  --c050: #e8f5e9;
-  --c100: #c8e6c9;
-  --c200: #a5d6a7;
-  --c300: #81c784;
-  --c400: #66bb6a;
-  --c500: #4caf50;
-  --c600: #43a047;
-  --c700: #388e3c;
-  --c800: #2e7d32;
-  --c900: #1b5e20;
-  --a100: #b9f6ca;
-  --a200: #69f0ae;
-  --a400: #00e676;
-  --a700: #00c853;
+  --c050: #eceff1;
+  --c100: #cfd8dc;
+  --c200: #b0bec5;
+  --c300: #90a4ae;
+  --c400: #78909c;
+  --c500: #607d8b;
+  --c600: #546e7a;
+  --c700: #455a64;
+  --c800: #37474f;
+  --c900: #263238;
+  --c100: #eeeeee;
+  --c200: #e0e0e0;
+  --c400: #bdbdbd;
+  --c700: #9e9e9e;
+
   --alpha900: rgba(27, 94, 32, 0.5);
   --alpha800: rgba(46, 125, 50, 0.3);
 }
@@ -70,8 +71,9 @@ body{
   padding: 20px;
   display: inline-block;
   background-color: var(--c100);
-  box-shadow: 10px 10px var(--c050);
+  border: 2px solid var(--c200);
   text-align: left;
+  border-radius: 4px;
 }
 
 #home{
@@ -90,7 +92,7 @@ body{
   width: 100%;
   text-align: right;
   padding: 20px;
-  background-color: var(--a700);
+  background-color: var(--c600);
 }
 
 .footer a{
@@ -103,38 +105,40 @@ body{
 }
 
 .sidepanel{
-  background-color: var(--a700);
+  background-color: var(--c500);
 }
 
 .sidepanel h1{
-  color: var(--c900);
+  color: var(--a700);
 }
 
 .sidepanel a{
-  color: var(--c800);
-}
-
-.sidepanel a:hover, .dropdown-btn:hover {
-  color: var(--c900);
-}
-
-.active {
-  background-color: var(--a100) !important;
-  color: #000000 !important;
-}
-
-.sidepanel > .dropdown-container{
-  background-color: var(--a400);
-}
-
-.sidepanel > .dropdown-container > .dropdown-container{
-  background-color: var(--a200);
+  color: #353535;
 }
 
 .dropdown-btn{
   background-color: inherit;
-  color: var(--c800);
+  color: #252525;
 }
+
+.sidepanel a:hover, .dropdown-btn:hover {
+  color: #000000 ;
+  background-color: var(--c400);
+}
+
+.active {
+  background-color: var(--c100) !important;
+  color: #000000 !important;
+}
+
+.sidepanel > .dropdown-container{
+  background-color: var(--c300);
+}
+
+.sidepanel > .dropdown-container > .dropdown-container{
+  background-color: var(--c200);
+}
+
 
 .progress-container {
   background: #efefef;
