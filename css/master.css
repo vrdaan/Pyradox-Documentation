@@ -14,8 +14,8 @@
   --c400: #bdbdbd;
   --c700: #9e9e9e;
 
-  --alpha900: rgba(27, 94, 32, 0.5);
-  --alpha800: rgba(46, 125, 50, 0.3);
+  --alpha900: rgba(200, 200, 200, 0.3);
+  --alpha800: rgba(236, 239, 241, 0.5);
 }
 
 html {
@@ -70,29 +70,35 @@ body{
   margin: 20px;
   padding: 20px;
   display: inline-block;
-  background-color: var(--c100);
-  border: 2px solid var(--c200);
+  background-color: #ffffff;
+  /* border: 2px solid var(--c200); */
   text-align: left;
   border-radius: 4px;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
 }
 
 #home{
   min-height: 95vh;
   width: 97vw;
-  background-color: var(--c050) !important;
+  background-image: url('../images/bg4.png');
   text-align: center;
+  color: #ffffff
+}
+
+#da{
+  background-image: url('../images/bg3.png');
+  color: #ffffff
 }
 
 .jumbotron{
   width: 97vw;
-  background-color: var(--c050) !important;
   text-align: center;
 }
 .footer{
   width: 100%;
   text-align: right;
   padding: 20px;
-  background-color: var(--c600);
+  background-color: #00838f;
 }
 
 .footer a{
@@ -105,7 +111,7 @@ body{
 }
 
 .sidepanel{
-  background-color: var(--c500);
+  background-color: #eceff1;
 }
 
 .sidepanel h1{
@@ -123,7 +129,7 @@ body{
 
 .sidepanel a:hover, .dropdown-btn:hover {
   color: #000000 ;
-  background-color: var(--c400);
+  background-color: #80cbc4;
 }
 
 .active {
@@ -132,7 +138,7 @@ body{
 }
 
 .sidepanel > .dropdown-container{
-  background-color: var(--c300);
+  background-color: #dfe8ec;
 }
 
 .sidepanel > .dropdown-container > .dropdown-container{
@@ -145,7 +151,7 @@ body{
 }
 
 #myBar {
-  background: var(--c300);
+  background: #00838f;
 }
 
 /* Custom Scrollbar */
@@ -156,15 +162,15 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--c300);
+  box-shadow: inset 0 0 5px #42a5f5;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--c300);
+  background: #42a5f5;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--c300);
+  background: #42a5f5;
 }

@@ -11,17 +11,17 @@
 }
 
 /* The sidepanel links */
-.sidepanel a, .dropdown-btn {
+.sidepanel a, h3 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   display: block;
   transition: 0.3s;
 }
 
-.sidepanel h1{
+.sidepanel h1, h2{
   padding-top: 20px;
-  padding-left: 32px;
+  padding-left: 24px;
 }
 
 .sidepanel a:hover{

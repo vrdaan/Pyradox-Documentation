@@ -17,49 +17,6 @@
       <h1>PYRADOX</h1>
       <a href="#home" onclick="closeNav()">Home</a>
       <a href="#017" onclick="closeNav()">Analyse</a>
-      <button class="dropdown-btn">Data Analysis Mode<ion-icon name="menu"></ion-icon>
-      </button>
-      <div class="dropdown-container">
-        <a href="#da01" onclick="closeNav()">Correlation</a>
-        <a href="#da02" onclick="closeNav()">Describe</a>
-        <a href="#da03" onclick="closeNav()">Done</a>
-        <button class="dropdown-btn">Drop<ion-icon name="menu"></ion-icon>
-        </button>
-        <div class="dropdown-container">
-          <a href="#da0401" onclick="closeNav()">Null</a>
-          <a href="#da0402" onclick="closeNav()">Outliers, Interquantile range</a>
-          <a href="#da0403" onclick="closeNav()">Outliers, Quantiles</a>
-          <a href="#da0404" onclick="closeNav()">Outliers, Z Score</a>
-          <a href="#da0405" onclick="closeNav()">Column</a>
-        </div>
-        <a href="#da05" onclick="closeNav()">Encode, Label</a>
-        <a href="#da06" onclick="closeNav()">Encode, One Hot</a>
-        <a href="#da07" onclick="closeNav()">Groupby</a>
-        <a href="#da08" onclick="closeNav()">Head</a>
-        <a href="#da09" onclick="closeNav()">Impute</a>
-        <a href="#da10" onclick="closeNav()">Insight</a>
-        <a href="#da11" onclick="closeNav()">Missing Data</a>
-        <a href="#da12" onclick="closeNav()">Pivot</a>
-        <button class="dropdown-btn">Plot<ion-icon name="menu"></ion-icon>
-        </button>
-        <div class="dropdown-container">
-          <a href="#da1301" onclick="closeNav()">Bar</a>
-          <a href="#da1302" onclick="closeNav()">Box</a>
-          <a href="#da1303" onclick="closeNav()">Count</a>
-          <a href="#da1304" onclick="closeNav()">Dist</a>
-          <a href="#da1305" onclick="closeNav()">Joint</a>
-          <a href="#da1306" onclick="closeNav()">Pair</a>
-          <a href="#da1307" onclick="closeNav()">Pie</a>
-          <a href="#da1308" onclick="closeNav()">Violin</a>
-        </div>
-        <a href="#da14" onclick="closeNav()">Reload</a>
-        <a href="#da15" onclick="closeNav()">Revert</a>
-        <a href="#da16" onclick="closeNav()">Save</a>
-        <a href="#da17" onclick="closeNav()">Shape</a>
-        <a href="#da18" onclick="closeNav()">Tail</a>
-        <a href="#da19" onclick="closeNav()">Unique</a>
-        <a href="#da20" onclick="closeNav()">Value Distribution</a>
-      </div>
       <a href="#021" onclick="closeNav()">App Manager</a>
       <a href="#004" onclick="closeNav()">Browse</a>
       <a href="#003" onclick="closeNav()">Calculate</a>
@@ -84,6 +41,40 @@
       <a href="#007" onclick="closeNav()">Walk</a>
       <a href="#024" onclick="closeNav()">Wikipedia</a>
       <a href="#011" onclick="closeNav()">Word Cloud</a>
+      <h2>Data Analysis Mode</h2>
+      <a href="#da01" onclick="closeNav()">Correlation</a>
+      <a href="#da02" onclick="closeNav()">Describe</a>
+      <a href="#da03" onclick="closeNav()">Done</a>
+      <h3>Drop</h3>
+      <a href="#da0401" onclick="closeNav()">Null</a>
+      <a href="#da0402" onclick="closeNav()">Outliers, Interquantile range</a>
+      <a href="#da0403" onclick="closeNav()">Outliers, Quantiles</a>
+      <a href="#da0404" onclick="closeNav()">Outliers, Z Score</a>
+      <a href="#da0405" onclick="closeNav()">Column</a>
+      <a href="#da05" onclick="closeNav()">Encode, Label</a>
+      <a href="#da06" onclick="closeNav()">Encode, One Hot</a>
+      <a href="#da07" onclick="closeNav()">Groupby</a>
+      <a href="#da08" onclick="closeNav()">Head</a>
+      <a href="#da09" onclick="closeNav()">Impute</a>
+      <a href="#da10" onclick="closeNav()">Insight</a>
+      <a href="#da11" onclick="closeNav()">Missing Data</a>
+      <a href="#da12" onclick="closeNav()">Pivot</a>
+      <h3>Plot</h3>
+      <a href="#da1301" onclick="closeNav()">Bar</a>
+      <a href="#da1302" onclick="closeNav()">Box</a>
+      <a href="#da1303" onclick="closeNav()">Count</a>
+      <a href="#da1304" onclick="closeNav()">Dist</a>
+      <a href="#da1305" onclick="closeNav()">Joint</a>
+      <a href="#da1306" onclick="closeNav()">Pair</a>
+      <a href="#da1307" onclick="closeNav()">Pie</a>
+      <a href="#da1308" onclick="closeNav()">Violin</a>
+      <a href="#da14" onclick="closeNav()">Reload</a>
+      <a href="#da15" onclick="closeNav()">Revert</a>
+      <a href="#da16" onclick="closeNav()">Save</a>
+      <a href="#da17" onclick="closeNav()">Shape</a>
+      <a href="#da18" onclick="closeNav()">Tail</a>
+      <a href="#da19" onclick="closeNav()">Unique</a>
+      <a href="#da20" onclick="closeNav()">Value Distribution</a>
     </div>
 
     <!-- Use any element to open the sidenav -->
@@ -418,7 +409,7 @@
           <pre>$ wiki_ --query</pre>
         </div>
       </div>
-      <div class="jumbotron">
+      <div class="jumbotron" id="da">
         <h1 class="display-4">Data Analysis Features</h1>
       </div>
 
