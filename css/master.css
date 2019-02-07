@@ -89,6 +89,8 @@ body{
 .jumbotron{
   width: 97vw;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer{
   width: 100%;
