@@ -1,10 +1,14 @@
 :root{
-  --alpha900: rgba(200, 200, 200, 0.3);
-  --alpha800: rgba(236, 239, 241, 0.5);
+  --alpha800: rgba(200, 200, 200, 0.3);
+  --alpha900: rgba(236, 239, 241, 0.5);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+p, h1, h2, h6{
+  font-family: 'Righteous', cursive !important;
 }
 
 #toggle{
