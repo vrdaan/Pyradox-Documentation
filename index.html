@@ -22,6 +22,7 @@
       <a href="#004" onclick="closeNav()">Browse</a>
       <a href="#003" onclick="closeNav()">Calculate</a>
       <a href="#002" onclick="closeNav()">Google Search</a>
+      <a href="#027" onclick="closeNav()">How Do I</a>
       <a href="#026" onclick="closeNav()">Image Search</a>
       <a href="#005" onclick="closeNav()">Me</a>
       <a href="#018" onclick="closeNav()">Medium</a>
@@ -129,10 +130,16 @@
         <pre>$ google --<i>query</i></pre>
       </div>
       <div class="grid">
+        <div data-aos="fade-down-left" class="doc" id="027">
+          <h2>How Do I</h2><hr>
+          <p>Search stack overflow for your problem and the get your solution withour even visiting the website and that too in just a few seconds...</p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ howdoi --<i>query</i></pre>
+        </div>
+        <br>
         <div data-aos="fade-down-left" class="doc" id="005">
           <h2>Me</h2><hr>
-          <p>In this internet world, how can we forget your social media accounts!
-            <br>Quickly access your social media account like facebook, instagram, whatsapp, twitter, linkedin, github, codechef, codepen with pyradox in just one go</p> <hr>
+          <p>Quickly access your social media account like facebook, instagram, whatsapp, twitter, linkedin, github, codechef, codepen with pyradox in just one go</p> <hr>
           <h6>Usage:</h6>
           <pre>$ me --<i>social media site</i></pre>
         </div>
@@ -145,102 +152,109 @@
           <h6>Usage:</h6>
           <pre>$ saveweb --<i>url</i> --<i>path for the pdf file</i></pre>
         </div>
+        <br>
+        <div data-aos="flip-down" class="doc"  id="010">
+          <h2>Speech</h2><hr>
+          <p>Pyradox is able to read out the text and even your clipboard contents.
+          </p>
+          <hr>
+          <p>Pronounce some text...</p>
+          <h6>Usage:</h6>
+          <pre>$ pronounce --<i>text</i></pre>
+          <hr>
+          <p>Read the text copied in your clipboard...</p>
+          <h6>Usage:</h6>
+          <pre>$ read</pre>
+        </div>
       </div>
-      <div data-aos="flip-up" class="doc"  id="008">
-        <h2>Memo</h2><hr>
-        <p>A perfect way to create and organise your tasks and events is this "memo"
-        </p>
-        <hr>
-        <p>List all the saved memos...</p>
-        <h6>Usage:</h6>
-        <pre>$ memo_all</pre>
-        <hr>
-        <p>Create a memo...</p>
-        <h6>Usage:</h6>
-        <pre>$ memo_new --<i>memo title</i></pre>
-        <hr>
-        <p>Read the memo...</p>
-        <h6>Usage:</h6>
-        <pre>$ memo_read --<i>memo title</i></pre>
-        <hr>
-        <p>Delete the memo...</p>
-        <h6>Usage:</h6>
-        <pre>$ memo_del --<i>memo title</i></pre>
-        <hr>
-        <p>Delete all memos...</p>
-        <h6>Usage:</h6>
-        <pre>$ memo_delall</pre>
+      <div class="grid">
+        <div data-aos="flip-up" class="doc"  id="008">
+          <h2>Memo</h2><hr>
+          <p>A perfect way to create and organise your tasks and events is this "memo"
+          </p>
+          <hr>
+          <p>List all the saved memos...</p>
+          <h6>Usage:</h6>
+          <pre>$ memo_all</pre>
+          <hr>
+          <p>Create a memo...</p>
+          <h6>Usage:</h6>
+          <pre>$ memo_new --<i>memo title</i></pre>
+          <hr>
+          <p>Read the memo...</p>
+          <h6>Usage:</h6>
+          <pre>$ memo_read --<i>memo title</i></pre>
+          <hr>
+          <p>Delete the memo...</p>
+          <h6>Usage:</h6>
+          <pre>$ memo_del --<i>memo title</i></pre>
+          <hr>
+          <p>Delete all memos...</p>
+          <h6>Usage:</h6>
+          <pre>$ memo_delall</pre>
+        </div>
+        <br>
+        <div data-aos="flip-down" class="doc"  id="011">
+          <h2>Word Cloud</h2><hr>
+          <p>Visualising your text with some cool word clouds is pretty much exciting. Check it out now!
+          </p>
+          <h6>Usage:</h6>
+          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i></pre><hr>
+          <p>Optional: provide an image mask for the cloud</p>
+          <h6>Usage:</h6>
+          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i> --<i>imgsrc</i></pre>
+          <hr>
+          <p>w: width</p>
+          <p>h: height</p>
+          <p>mxw: maximum number of words for the cloud</p>
+          <p>bgc: background color</p>
+          <p>imgsrc: mask image source</p>
+        </div>
       </div>
-      <div data-aos="flip-up" class="doc"  id="009">
-        <h2>Multi Clip Board</h2><hr>
-        <p>Won't it be interesting to be able to save multiple text on the clip board at the same time.
-        <br>  Try yourself!</p>
-        <hr>
-        <p>List all the saved clips...</p>
-        <h6>Usage:</h6>
-        <pre>$ mcb_all</pre>
-        <hr>
-        <p>Create a clip...</p>
-        <h6>Usage:</h6>
-        <pre>$ mcb_new --<i>clip title</i></pre>
-        <hr>
-        <p>Copy the clip...</p>
-        <h6>Usage:</h6>
-        <pre>$ mcb_read --<i>clip title</i></pre>
-        <hr>
-        <p>Delete the clip...</p>
-        <h6>Usage:</h6>
-        <pre>$ mcb_del --<i>clip title</i></pre>
-        <hr>
-        <p>Delete all clips...</p>
-        <h6>Usage:</h6>
-        <pre>$ mcb_delall</pre>
-      </div>
-      <div data-aos="flip-down" class="doc"  id="010">
-        <h2>Speech</h2><hr>
-        <p>Pyradox is able to read out the text and even your clipboard contents.
-        </p>
-        <hr>
-        <p>Pronounce some text...</p>
-        <h6>Usage:</h6>
-        <pre>$ pronounce --<i>text</i></pre>
-        <hr>
-        <p>Read the text copied in your clipboard...</p>
-        <h6>Usage:</h6>
-        <pre>$ read</pre>
-      </div>
-      <div data-aos="flip-down" class="doc"  id="011">
-        <h2>Word Cloud</h2><hr>
-        <p>Visualising your text with some cool word clouds is pretty much exciting. Check it out now!
-        </p>
-        <h6>Usage:</h6>
-        <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i></pre><hr>
-        <p>Optional: provide an image mask for the cloud</p>
-        <h6>Usage:</h6>
-        <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i> --<i>imgsrc</i></pre>
-        <hr>
-        <p>w: width</p>
-        <p>h: height</p>
-        <p>mxw: maximum number of words for the cloud</p>
-        <p>bgc: background color</p>
-        <p>imgsrc: mask image source</p>
-      </div>
-      <div data-aos="flip-down" class="doc"  id="012">
-        <h2>PDF Utilities</h2><hr>
-        <p>Merge two pdf files</p>
-        <h6>Usage:</h6>
-        <pre>$ pdf_merge --<i>src1</i> --<i>scr2</i> --<i>dest</i></pre>
-        <hr>
-        <p>Slice a pdf file</p>
-        <h6>Usage: </h6>
-        <pre>$ pdf_cut --<i>src</i> --<i>beg</i> --<i>end</i> --<i>dst</i></pre>
-        <hr>
-        <p>Encrypt a pdf file</p>
-        <h6>Usage: </h6>
-        <pre>$ pdf_encrypt --<i>src</i> --<i>password</i> --<i>dst</i></pre>
-        <p>Decrypt a pdf file</p>
-        <p>Usage: </p>
-        <pre>$ pdf_decrypt --<i>src</i> --<i>password</i> --<i>dst</i></pre>
+      <div class="grid">
+        <div data-aos="flip-up" class="doc"  id="009">
+          <h2>Multi Clip Board</h2><hr>
+          <p>Won't it be interesting to be able to save multiple text on the clip board at the same time.
+          <br>  Try yourself!</p>
+          <hr>
+          <p>List all the saved clips...</p>
+          <h6>Usage:</h6>
+          <pre>$ mcb_all</pre>
+          <hr>
+          <p>Create a clip...</p>
+          <h6>Usage:</h6>
+          <pre>$ mcb_new --<i>clip title</i></pre>
+          <hr>
+          <p>Copy the clip...</p>
+          <h6>Usage:</h6>
+          <pre>$ mcb_read --<i>clip title</i></pre>
+          <hr>
+          <p>Delete the clip...</p>
+          <h6>Usage:</h6>
+          <pre>$ mcb_del --<i>clip title</i></pre>
+          <hr>
+          <p>Delete all clips...</p>
+          <h6>Usage:</h6>
+          <pre>$ mcb_delall</pre>
+        </div>
+        <br>
+        <div data-aos="flip-down" class="doc"  id="012">
+          <h2>PDF Utilities</h2><hr>
+          <p>Merge two pdf files</p>
+          <h6>Usage:</h6>
+          <pre>$ pdf_merge --<i>src1</i> --<i>scr2</i> --<i>dest</i></pre>
+          <hr>
+          <p>Slice a pdf file</p>
+          <h6>Usage: </h6>
+          <pre>$ pdf_cut --<i>src</i> --<i>beg</i> --<i>end</i> --<i>dst</i></pre>
+          <hr>
+          <p>Encrypt a pdf file</p>
+          <h6>Usage: </h6>
+          <pre>$ pdf_encrypt --<i>src</i> --<i>password</i> --<i>dst</i></pre>
+          <p>Decrypt a pdf file</p>
+          <p>Usage: </p>
+          <pre>$ pdf_decrypt --<i>src</i> --<i>password</i> --<i>dst</i></pre>
+        </div>
       </div>
       <div data-aos="zoom-in" class="doc"  id="013">
         <h2>Parts of Speech</h2><hr>
