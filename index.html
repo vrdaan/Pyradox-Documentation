@@ -25,6 +25,8 @@
       <a href="#002" onclick="closeNav()">Google Search</a>
       <a href="#027" onclick="closeNav()">How Do I</a>
       <a href="#026" onclick="closeNav()">Image Search</a>
+      <a href="#031" onclick="closeNav()">Keyword Extraction</a>
+      <a href="#033" onclick="closeNav()">Language Translation</a>
       <a href="#005" onclick="closeNav()">Me</a>
       <a href="#018" onclick="closeNav()">Medium</a>
       <a href="#008" onclick="closeNav()">Memo</a>
@@ -44,6 +46,7 @@
       <a href="#022" onclick="closeNav()">Text Summarisation</a>
       <a href="#025" onclick="closeNav()">Virtual Assistant</a>
       <a href="#007" onclick="closeNav()">Walk</a>
+      <a href="#032" onclick="closeNav()">Web Scraping</a>
       <a href="#024" onclick="closeNav()">Wikipedia</a>
       <a href="#011" onclick="closeNav()">Word Cloud</a>
       <a href="#029" onclick="closeNav()">YouTube Downloader</a>
@@ -313,6 +316,10 @@
         <p>Save an article of medium into a pdf file...</p>
         <h6>Usage:</h6>
         <pre>$ medium --save --<i>query</i></pre>
+        <hr>
+        <p>Save a medium articleusing its url into a pdf file...</p>
+        <h6>Usage:</h6>
+        <pre>$ medium --url --<i>article url</i></pre>
       </div>
       <div class="grid">
         <div data-aos="fade-up-right" class="doc" id="019">
@@ -459,6 +466,38 @@
         <h6>Usage:</h6>
         <pre>$ git --<i>directory</i> --commit --<i>message</i></pre>
         <pre>$ git --<i>directory</i> --status </pre>
+      </div>
+      <div data-aos="fade-left" class="doc" id="031">
+        <h2>Keyword Extraction</h2> <hr>
+        <p>It's no more a difficult job to get keywords of a long text with this Pyradox...
+        </p> <hr>
+        <h6>Usage:</h6>
+        <pre>$ extract --<i>text</i> --<i>n</i></pre> <hr>
+        <p>Extract keywords of the text from a file</p> <hr>
+        <h6>Usage:</h6>
+        <pre>$ extractf --<i>filepath</i> -- <i>n</i></pre>
+      </div>
+      <div data-aos="fade-up" class="doc" id="032">
+        <h2>Web Scraping</h2> <hr>
+        <p>Scraping the web was never this quicker and easrier before...
+        <br>Pyradox comes with support for scrapy python's very own and powerful webscraping library...
+      </p> <hr>
+      <h6>Usage:</h6>
+      <pre>$ scrape --<i>url</i></pre>
+      </div>
+      <div data-aos="fade-right" class="doc" id="033">
+        <h2>Language Translation</h2> <hr>
+        <p>Translate a text to various languages</p> <hr>
+        <h6>Usage:</h6>
+        <pre>$ trans --<i>lang</i> --<i>text</i></pre>
+        <hr>
+        <p>Get the list of language codes</p>
+        <h6>Usage:</h6>
+        <pre>$ trans --list</pre>
+        <hr>
+        <p>Detect the language of a text</p>
+        <h6>Usage:</h6>
+        <pre>$ trans --detect --<i>text</i></pre>
       </div>
       <div class="jumbotron" id="da">
         <h1 class="display-4">Data Analysis Features</h1>
