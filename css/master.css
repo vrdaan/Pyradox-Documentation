@@ -11,6 +11,10 @@ p, h1, h2, h6{
   font-family: 'Righteous', cursive !important;
 }
 
+a:hover{
+  text-decoration: none !important;
+}
+
 #toggle{
   font-size: 10vh;
   color: var(--alpha900);
@@ -81,7 +85,7 @@ body{
   color: #ffffff
 }
 
-#da{
+#da, #tom, .footer{
   background-image: url('../images/bg3.png');
   color: #ffffff
 }

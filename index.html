@@ -44,6 +44,7 @@
       <a href="#028" onclick="closeNav()">Terminal</a>
       <a href="#019" onclick="closeNav()">Text Replace</a>
       <a href="#022" onclick="closeNav()">Text Summarisation</a>
+      <a href="#034" onclick="closeNav()">Tweet-O-Meter</a>
       <a href="#025" onclick="closeNav()">Virtual Assistant</a>
       <a href="#007" onclick="closeNav()">Walk</a>
       <a href="#032" onclick="closeNav()">Web Scraping</a>
@@ -84,6 +85,15 @@
       <a href="#da18" onclick="closeNav()">Tail</a>
       <a href="#da19" onclick="closeNav()">Unique</a>
       <a href="#da20" onclick="closeNav()">Value Distribution</a>
+      <h2>Tweet-O-Meter</h2>
+      <a href="#tom01" onclick="closeNav()">Done</a>
+      <a href="#tom02" onclick="closeNav()">Hashtag</a>
+      <a href="#tom03" onclick="closeNav()">Keywords</a>
+      <a href="#tom04" onclick="closeNav()">Sarcasm</a>
+      <a href="#tom05" onclick="closeNav()">Save</a>
+      <a href="#tom06" onclick="closeNav()">Sentiment</a>
+      <a href="#tom07" onclick="closeNav()">Walk</a>
+
     </div>
 
     <!-- Use any element to open the sidenav -->
@@ -174,50 +184,6 @@
         </div>
       </div>
       <div class="grid">
-        <div data-aos="flip-up" class="doc"  id="008">
-          <h2>Memo</h2><hr>
-          <p>A perfect way to create and organise your tasks and events is this "memo"
-          </p>
-          <hr>
-          <p>List all the saved memos...</p>
-          <h6>Usage:</h6>
-          <pre>$ memo_all</pre>
-          <hr>
-          <p>Create a memo...</p>
-          <h6>Usage:</h6>
-          <pre>$ memo_new --<i>memo title</i></pre>
-          <hr>
-          <p>Read the memo...</p>
-          <h6>Usage:</h6>
-          <pre>$ memo_read --<i>memo title</i></pre>
-          <hr>
-          <p>Delete the memo...</p>
-          <h6>Usage:</h6>
-          <pre>$ memo_del --<i>memo title</i></pre>
-          <hr>
-          <p>Delete all memos...</p>
-          <h6>Usage:</h6>
-          <pre>$ memo_delall</pre>
-        </div>
-        <br>
-        <div data-aos="flip-down" class="doc"  id="011">
-          <h2>Word Cloud</h2><hr>
-          <p>Visualising your text with some cool word clouds is pretty much exciting. Check it out now!
-          </p>
-          <h6>Usage:</h6>
-          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i></pre><hr>
-          <p>Optional: provide an image mask for the cloud</p>
-          <h6>Usage:</h6>
-          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i> --<i>imgsrc</i></pre>
-          <hr>
-          <p>w: width</p>
-          <p>h: height</p>
-          <p>mxw: maximum number of words for the cloud</p>
-          <p>bgc: background color</p>
-          <p>imgsrc: mask image source</p>
-        </div>
-      </div>
-      <div class="grid">
         <div data-aos="flip-up" class="doc"  id="009">
           <h2>Multi Clip Board</h2><hr>
           <p>Won't it be interesting to be able to save multiple text on the clip board at the same time.
@@ -262,6 +228,47 @@
           <pre>$ pdf_decrypt --<i>src</i> --<i>password</i> --<i>dst</i></pre>
         </div>
       </div>
+      <div class="grid">
+        <div data-aos="fade-down-right" class="doc" id="033">
+          <h2>Language Translation</h2> <hr>
+          <p>Translate a text to various languages</p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ trans --<i>lang</i> --<i>text</i></pre>
+          <hr>
+          <p>Get the list of language codes</p>
+          <h6>Usage:</h6>
+          <pre>$ trans --list</pre>
+          <hr>
+          <p>Detect the language of a text</p>
+          <h6>Usage:</h6>
+          <pre>$ trans --detect --<i>text</i></pre>
+        </div>
+        <br>
+        <div data-aos="fade-down-right" class="doc"  id="008">
+          <h2>Memo</h2><hr>
+          <p>A perfect way to create and organise your tasks and events is this "memo". Powered by Google Keep
+          </p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ memo</pre>
+        </div>
+        <br>
+        <div data-aos="fade-down-right" class="doc"  id="011">
+          <h2>Word Cloud</h2><hr>
+          <p>Visualising your text with some cool word clouds is pretty much exciting. Check it out now!
+          </p>
+          <h6>Usage:</h6>
+          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i></pre><hr>
+          <p>Optional: provide an image mask for the cloud</p>
+          <h6>Usage:</h6>
+          <pre>$ wordcloud --<i>w</i> --<i>h</i> --<i>mxw</i> --<i>bgc</i> --<i>imgsrc</i></pre>
+          <hr>
+          <p>w: width</p>
+          <p>h: height</p>
+          <p>mxw: maximum number of words for the cloud</p>
+          <p>bgc: background color</p>
+          <p>imgsrc: mask image source</p>
+        </div>
+      </div>
       <div data-aos="zoom-in" class="doc"  id="013">
         <h2>Parts of Speech</h2><hr>
         <p>Finding the parts of speech in a certain text is possible with Pyradox's data analysis methods!
@@ -298,7 +305,10 @@
           <h2>Analyse</h2><hr>
           <p>Turn on the Data Analysis Mode and perform some data analysison the provided csv file...</p> <hr>
           <h6>Usage:</h6>
-          <pre>$ analyse --<i>csv file path</i></pre>
+          <pre>$ analyse --<i>csv file path</i></pre> <hr>
+          <a href="#da" class="btn btn-outline-info btn-sm btn-block">
+            More
+          </a>
         </div>
       </div>
       <div data-aos="fade-up-right" class="doc" id="018">
@@ -468,6 +478,14 @@
         <pre>$ git --<i>directory</i> --status </pre>
       </div>
       <div data-aos="fade-left" class="doc" id="031">
+        <h2>Web Scraping</h2> <hr>
+        <p>Scraping the web was never this quicker and easrier before...
+        <br>Pyradox comes with support for scrapy python's very own and powerful webscraping library...
+      </p> <hr>
+      <h6>Usage:</h6>
+      <pre>$ scrape --<i>url</i></pre>
+      </div>
+      <div data-aos="fade-up" class="doc" id="032">
         <h2>Keyword Extraction</h2> <hr>
         <p>It's no more a difficult job to get keywords of a long text with this Pyradox...
         </p> <hr>
@@ -477,27 +495,15 @@
         <h6>Usage:</h6>
         <pre>$ extractf --<i>filepath</i> -- <i>n</i></pre>
       </div>
-      <div data-aos="fade-up" class="doc" id="032">
-        <h2>Web Scraping</h2> <hr>
-        <p>Scraping the web was never this quicker and easrier before...
-        <br>Pyradox comes with support for scrapy python's very own and powerful webscraping library...
-      </p> <hr>
-      <h6>Usage:</h6>
-      <pre>$ scrape --<i>url</i></pre>
-      </div>
-      <div data-aos="fade-right" class="doc" id="033">
-        <h2>Language Translation</h2> <hr>
-        <p>Translate a text to various languages</p> <hr>
+      <div data-aos="fade-right" class="doc" id="034">
+        <h2>Tweet-O-Meter</h2> <hr>
+        <p>Live Tweet analysis including hash tag analysis, sarcasm detection, sentiment analysis, keyword extraction, visualization using word cloud etc..</p> <hr>
         <h6>Usage:</h6>
-        <pre>$ trans --<i>lang</i> --<i>text</i></pre>
-        <hr>
-        <p>Get the list of language codes</p>
-        <h6>Usage:</h6>
-        <pre>$ trans --list</pre>
-        <hr>
-        <p>Detect the language of a text</p>
-        <h6>Usage:</h6>
-        <pre>$ trans --detect --<i>text</i></pre>
+        <pre>$ tweetometer --<i>n</i> --<i>query</i></pre> <hr>
+        <a href="#tom" class="btn btn-outline-info btn-sm btn-block">
+          More
+        </a>
+
       </div>
       <div class="jumbotron" id="da">
         <h1 class="display-4">Data Analysis Features</h1>
@@ -792,7 +798,83 @@
         <pre>&gt;&gt; plot --violin --<i>x</i> --<i>y</i> --<i>hue(optional)</i>
         </pre>
       </div>
+
+      <div class="jumbotron" id="tom">
+        <h1 class="display-4">Tweet-O-Meter</h1>
+      </div>
+
+      <div class="grid">
+        <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom04">
+          <h2>Sarcasm</h2>
+          <hr>
+          <p>Perform Sarcasm Detection on the Tweets</p>
+          <hr>
+          <h6>Usage</h6>
+          <pre>&gt;&gt; sarcasm</pre>
+        </div>
+        <br>
+        <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom06">
+          <h2>Sentiment</h2>
+          <hr>
+          <p>Perform Sentiment Analysis on the Tweets</p>
+          <hr>
+          <h6>Usage</h6>
+          <pre>&gt;&gt; sentiment</pre>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom07">
+        <h2>Walk</h2>
+        <hr>
+        <p>Walk through the tweets one by one and perform updations</p>
+        <h6>Usage</h6>
+        <pre>&gt;&gt; walk</pre>
+        <hr>
+        <p>Update Sentiment</p>
+        <h6>Usage</h6>
+        <pre>&gt;&gt; walk --sentiment</pre> <hr>
+        <p>Update Sarcasm</p>
+        <h6>Usage</h6>
+        <pre>&gt;&gt; walk --sarcasm</pre>
+      </div>
+      <div class="grid">
+        <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom01">
+          <h2>Done</h2>
+          <hr>
+          <p>Exit the Tweet-O-Meter</p>
+          <hr>
+          <h6>Usage</h6>
+          <pre>&gt;&gt; done</pre>
+        </div>
+        <br>
+        <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom05">
+          <h2>Save</h2>
+          <hr>
+          <p>Save your current progress to a csv file</p>
+          <hr>
+          <h6>Usage</h6>
+          <pre>&gt;&gt; save</pre>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom02">
+        <h2>Hashtag</h2>
+        <hr>
+        <p>Analyse the distinct hashtags and their occurences</p>
+        <hr>
+        <h6>Usage</h6>
+        <pre>&gt;&gt; hashtag</pre>
+        <pre>&gt;&gt; hashtag --<i>n</i></pre>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="3000" class="doc" id="tom03">
+        <h2>Keywords</h2>
+        <hr>
+        <p>Extract keywords from the tweets</p>
+        <hr>
+        <h6>Usage</h6>
+        <pre>&gt;&gt; keywords --<i>n</i></pre>
+      </div>
     </div>
+
+    
     <div class="footer">
     <h4>&lt;&gt; by <a href="https://ritvikrastogi19.surge.sh">Ritvik Rastogi</a></h4>
     </div>
