@@ -34,6 +34,7 @@
       <a href="#014" onclick="closeNav()">Named Entity Recognition</a>
       <a href="#012" onclick="closeNav()">PDF Utilities</a>
       <a href="#013" onclick="closeNav()">Parts of Speech</a>
+      <a href="#035" onclick="closeNav()">QR Code Generator</a>
       <a href="#006" onclick="closeNav()">Save Webpage</a>
       <a href="#020" onclick="closeNav()">Sentiment Analysis</a>
       <a href="#016" onclick="closeNav()">Sketch</a>
@@ -452,59 +453,75 @@
         <pre>$ sketch --<i>imgsrc</i></pre>
       </div>
 
-      <div data-aos="fade-up-right" class="doc" id="028">
-        <h2>Terminal</h2><hr>
-        <p>Pyradox comes with builtin terminal...
-          <br>You can launch the terminal from any directory...
+      <div class="grid">
+        <div data-aos="fade-up-right" class="doc" id="028">
+          <h2>Terminal</h2><hr>
+          <p>Pyradox comes with builtin terminal...
+            <br>You can launch the terminal from any directory...
+          </p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ terminal --<i>directory</i></pre>
+        </div>
+        <br>
+        <div data-aos="fade-left" class="doc" id="031">
+          <h2>Web Scraping</h2> <hr>
+          <p>Scraping the web was never this quicker and easrier before...
+          <br>Pyradox comes with support for scrapy python's very own and powerful webscraping library...
         </p> <hr>
         <h6>Usage:</h6>
-        <pre>$ terminal --<i>directory</i></pre>
+        <pre>$ scrape --<i>url</i></pre>
+        </div>
       </div>
-      <div data-aos="flip-right" class="doc" id="029">
-        <h2>YouTube Downloader</h2><hr>
-        <p>
-          Want a youtube video downloaded...
-          <br>Pyradox will get things done for you in seconds
-        </p> <hr>
-        <h6>Usage:</h6>
-        <pre>$ ytd --<i>videolink</i> --<i>downloadpath</i></pre>
+      <div class="grid">
+        <div data-aos="flip-right" class="doc" id="030">
+          <h2>Git</h2><hr>
+          <p>Now you can check the status and commit your work easily in git hub, quicker than ever before...
+          </p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ git --<i>directory</i> --commit --<i>message</i></pre>
+          <pre>$ git --<i>directory</i> --status </pre>
+        </div>
+        <br>
+        <div data-aos="fade-up" class="doc" id="032">
+          <h2>Keyword Extraction</h2> <hr>
+          <p>It's no more a difficult job to get keywords of a long text with this Pyradox...
+          </p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ extract --<i>text</i> --<i>n</i></pre> <hr>
+          <p>Extract keywords of the text from a file</p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ extractf --<i>filepath</i> -- <i>n</i></pre>
+        </div>
       </div>
-      <div data-aos="fade-down-right" class="doc" id="030">
-        <h2>Git</h2><hr>
-        <p>Now you can check the status and commit your work easily in git hub, quicker than ever before...
-        </p> <hr>
-        <h6>Usage:</h6>
-        <pre>$ git --<i>directory</i> --commit --<i>message</i></pre>
-        <pre>$ git --<i>directory</i> --status </pre>
+      <div class="grid">
+        <div data-aos="fade-down-right" class="doc" id="029">
+          <h2>YouTube Downloader</h2><hr>
+          <p>
+            Want a youtube video downloaded...
+            <br>Pyradox will get things done for you in seconds
+          </p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ ytd --<i>videolink</i> --<i>downloadpath</i></pre>
+        </div>
+        <br>
+        <div data-aos="fade-right" class="doc" id="034">
+          <h2>Tweet-O-Meter</h2> <hr>
+          <p>Live Tweet analysis including hash tag analysis, sarcasm detection, sentiment analysis, keyword extraction, visualization using word cloud etc..</p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ tweetometer --<i>n</i> --<i>query</i></pre> <hr>
+          <a href="#tom" class="btn btn-outline-info btn-sm btn-block">
+            More
+          </a>
+        </div>
+        <br>
+        <div data-aos="fade-up-right" class="doc" id="035">
+          <h2>QR Code Generator</h2> <hr>
+          <p>Genrate QR codes in svg on the go with this handy tool...</p> <hr>
+          <h6>Usage:</h6>
+          <pre>$ qr --url --name</pre>
+        </div>
       </div>
-      <div data-aos="fade-left" class="doc" id="031">
-        <h2>Web Scraping</h2> <hr>
-        <p>Scraping the web was never this quicker and easrier before...
-        <br>Pyradox comes with support for scrapy python's very own and powerful webscraping library...
-      </p> <hr>
-      <h6>Usage:</h6>
-      <pre>$ scrape --<i>url</i></pre>
-      </div>
-      <div data-aos="fade-up" class="doc" id="032">
-        <h2>Keyword Extraction</h2> <hr>
-        <p>It's no more a difficult job to get keywords of a long text with this Pyradox...
-        </p> <hr>
-        <h6>Usage:</h6>
-        <pre>$ extract --<i>text</i> --<i>n</i></pre> <hr>
-        <p>Extract keywords of the text from a file</p> <hr>
-        <h6>Usage:</h6>
-        <pre>$ extractf --<i>filepath</i> -- <i>n</i></pre>
-      </div>
-      <div data-aos="fade-right" class="doc" id="034">
-        <h2>Tweet-O-Meter</h2> <hr>
-        <p>Live Tweet analysis including hash tag analysis, sarcasm detection, sentiment analysis, keyword extraction, visualization using word cloud etc..</p> <hr>
-        <h6>Usage:</h6>
-        <pre>$ tweetometer --<i>n</i> --<i>query</i></pre> <hr>
-        <a href="#tom" class="btn btn-outline-info btn-sm btn-block">
-          More
-        </a>
 
-      </div>
       <div class="jumbotron" id="da">
         <h1 class="display-4">Data Analysis Features</h1>
       </div>
@@ -874,7 +891,7 @@
       </div>
     </div>
 
-    
+
     <div class="footer">
     <h4>&lt;&gt; by <a href="https://ritvikrastogi19.surge.sh">Ritvik Rastogi</a></h4>
     </div>
